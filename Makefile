@@ -8,9 +8,9 @@ magman: moveable.o Speakable.o vulnerable.o
 
 moveable.o: Moveable/moveable.cpp
 	g++ -c Moveable/moveable.cpp
-	
-Speakable.o: Speakable/Speakable.cc
-	g++ -c Speakable/Speakable.cc
+
+Speakable.o: Speakable.cc
+	g++ -c -std=c++11 Speakable.cc
 	
 vulnerable.o: vulnerable/vulnerable.cpp
 	g++ -c vulnerable/vulnerable.cpp

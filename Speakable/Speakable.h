@@ -1,10 +1,9 @@
 #include <vector>
 #include <string>
-using namespace std;
 class Speakable{
 public:
-    vector<string> Sentence;
-    void addSentence(string _sentence);
+    std::vector<std::string> sentence;
+    void addSentence(std::string _sentence);
     void printSentence();
     Speakable();
 };
