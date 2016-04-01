@@ -1,7 +1,5 @@
 #include "Speakable.h"
 #include <iostream>
-#include <cstdlib>
-#include <ctime>
 #include <random>
 
 void Speakable::addSentence(std::string _sentence){
@@ -9,8 +7,6 @@ void Speakable::addSentence(std::string _sentence){
 }
 
 void Speakable::printSentence(){
-    //srand(time(NULL));
-    //int i = rand() % sentence.size();
     std::random_device rd;
     std::mt19937 gen(rd());
     int i = gen() % sentence.size();
