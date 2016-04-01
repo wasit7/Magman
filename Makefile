@@ -1,4 +1,7 @@
-all: magman
+all: magmanx
+
+magmanx: moveable.o Speakable.o
+	g++ main.cpp moveable.o Speakable.o -o magman
 
 magman: moveable.o Speakable.o vulnerable.o
 	g++ main.cpp moveable.o Speakable.o vulnerable.o -o magman
@@ -13,4 +16,4 @@ vulnerable.o: vulnerable/vulnerable.cpp
 	g++ -c vulnerable/vulnerable.cpp
 	
 clean: 
-	rm *.o magman
+	rm -rf *.o magman
