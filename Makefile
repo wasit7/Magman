@@ -7,7 +7,7 @@ movable.o: movable.cpp
 	g++ -c Movable/movable.cpp
 	
 Speakable.o: Speakable.cc
-	g++ -c Speakable.cc
+	g++ -c -std=c++11 Speakable.cc
 	
 vulnerable.o: vulnerable.cpp
 	g++ -c vulnerable.cpp

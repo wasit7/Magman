@@ -1,7 +1,4 @@
 #include "Speakable.h"
-#include <iostream>
-
-using namespace std;
 
 int main(){
     Speakable obj;

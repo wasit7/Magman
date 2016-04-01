@@ -2,21 +2,24 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
+#include <random>
 
-using namespace std;
-
-void Speakable::addSentence(string _sentence){
-    Sentence.push_back(_sentence);
+void Speakable::addSentence(std::string _sentence){
+    sentence.push_back(_sentence);
 }
 
 void Speakable::printSentence(){
-    srand(time(NULL));
-    int i = rand() % Sentence.size();
-    cout << Sentence[i] << endl;
+    //srand(time(NULL));
+    //int i = rand() % sentence.size();
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    int i = gen() % sentence.size();
+    std::cout << sentence[i] << std::endl;
 }
 
 Speakable::Speakable(){
-    Sentence.push_back("NOOB!!");
-    Sentence.push_back("kak");
-    Sentence.push_back("krian");
+    sentence.push_back("NOOB!!");
+    sentence.push_back("KAK");
+    sentence.push_back("KRIAN");
+    sentence.push_back("PUTANG INA MO!");
 }
