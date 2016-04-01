@@ -18,18 +18,18 @@ To push:
 >> git push
 
 ##spec
-Movable
->>	Float Posx
->>	Float Posy
->>	Void addDisplacement(float x, float y)
->>	printPos()
-Speakable
->>	Void addSentence(string )
->>	Void printSentence()
-Vulnerable
->>	Int hp
->>	Void updateHp(int d); hp=hp+d;
->>	Bool isDead();
+###Movable
+>> Float Posx
+>> Float Posy
+>> Void addDisplacement(float x, float y)
+>> printPos()
+###Speakable
+>> Void addSentence(string )
+>> Void printSentence()
+###Vulnerable
+>> Int hp
+>> Void updateHp(int d); hp=hp+d;
+>> Bool isDead();
 
 ## code start here
 code...
