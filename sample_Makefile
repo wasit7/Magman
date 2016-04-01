@@ -1,0 +1,13 @@
+all: main
+
+main: main.o Obj.o
+	g++ main.o Obj.o -o main
+
+main.o: main.cpp
+	g++ -c main.cpp
+	
+Obj.o: Obj.cpp
+	g++ -c Obj.cpp
+
+clean:
+	rm -rf *.o main
