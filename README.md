@@ -1,5 +1,5 @@
 # Magman
-Hello people! we are going to hit magman.
+Hello people! we are going to dig into magman's cave. Watch out!
 
 Magman is a movable monster living in volcanic cave. He can speak random sentences, which is very annoying. We can harm him by gently poking to reduce hit point (HP). He will temporary sleep when HP is less than or equal to zero. 
 ##git
