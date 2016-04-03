@@ -2,7 +2,6 @@
 #include "Speakable/Speakable.h"
 #include "vulnerable/vulnerable.h"
 #include "Attackable/Attackable.h"
-#include<iostream>
 using namespace std;
 class Magman: public Speakable,public Attackable,public Moveable,public Vulnerable {
     public:
@@ -12,8 +11,9 @@ class Magman: public Speakable,public Attackable,public Moveable,public Vulnerab
 };
 int main(){
     Magman m1,m2;
-    cout << m2.hp << endl;
-    m1.attack(&m2);
-    cout << m2.hp << endl;
+    while(!m2.isDead()){
+        m1.attack(&m2);
+        cout << "m1 attack : now m2's HP is " << m2.hp << endl;
+    }
     return 0;
 }
