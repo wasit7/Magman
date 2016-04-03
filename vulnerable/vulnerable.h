@@ -1,5 +1,3 @@
-using namespace std;
-
 class Vulnerable {
     
     public :
@@ -9,6 +7,8 @@ class Vulnerable {
         void updateHp(int hp);
     
         bool isDead();
+        
+        Vulnerable(int hp = 20);
     
     
 };

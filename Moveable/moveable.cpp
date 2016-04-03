@@ -1,6 +1,6 @@
 #include "moveable.h"
 
-Moveable::Moveable(float _x = 0, float _y =0)
+Moveable::Moveable(float _x, float _y)
 {
     Posx = _x;
     Posy = _y;

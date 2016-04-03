@@ -6,7 +6,7 @@ class Moveable
   public:
   float Posx;
   float Posy;
-  Moveable(float ,float);
+  Moveable(float = 0,float =0);
   void addDisplacement(float , float );
   void printPos();
     

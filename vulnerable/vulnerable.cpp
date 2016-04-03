@@ -16,7 +16,7 @@ bool Vulnerable::isDead(){
          
          return true; 
      
-     std::cout << "I'm very dead!" << endl;
+     //std::cout << "I'm very dead!" << endl;
      
          
      }
@@ -30,5 +30,9 @@ bool Vulnerable::isDead(){
      }
     
     
+}
+
+Vulnerable::Vulnerable(int hp){
+     this->hp=hp;
 }
     
